@@ -8,6 +8,27 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+html {
+  --scrollbarBG: #cfd8dc;
+  --thumbBG: rgb(92, 184, 116);
+}
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
