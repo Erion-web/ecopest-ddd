@@ -385,6 +385,9 @@ h6 {
   content: "";
   background-color: rgba(45, 103, 60, 0.8);
 }
+.carousel-transparent::before {
+  background-color: transparent !important;
+}
 #hero .carousel-container {
   display: flex;
   justify-content: center;
